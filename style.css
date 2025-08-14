@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hero-section{
+    background: url('/images/bg.jpg') no-repeat center;
+    height: 100vh;
+    background-size: 100% auto;
+    object-fit: contain;
+    opacity: 0.9;
+}
+.navbar{
+    margin: 0px 18% 0px 6%;
+}
+#logo{
+    width: 40%;
+    height: 40%;
+    margin-left: -5rem;
+    transition: transform 2s;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+#logo-text{
+    margin-left: -2rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(199, 105, 11);
+}
+#links{
+    color: white;
+}
+#links:hover{
+    color: rgb(195, 162, 14);
+}
+#home-head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(221, 221, 22);
+}
+#home-para{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-head{
+    font-family: "Lobster", sans-serif;
+}
+.about-para{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#p-text{
+    color: rgb(225, 159, 18);
+    font-weight: 700;
+}
+#about-bg{
+    background-color: rgba(178, 190, 12, 0.075);
+}
+#service-section{
+    background: url('./images/service-bg.jpg') no-repeat center;
+    height: 100vh;
+    background-size: 100% auto;
+    object-fit: contain;
+    opacity: 0.85;
+}
+.service-head{
+    font-family: "Lobster", sans-serif;
+}
+.icons{
+    border: 1px solid;
+    border-radius: 10%;
+    background-color: rgba(214, 142, 7, 0.708);
+}
+.cycle-icon{
+    cursor: pointer;
+    transition: transform 3s;
+}
+.cycle-icon:hover{
+    transform: scale(1.2);
+}
+#service-title{
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Chef-Name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to left bottom,rgb(209, 172, 8),rgba(18, 16, 16, 0.381));
+}
+#chef-detail{
+    border: 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 1.2s;
+}
+#chef-detail:hover{
+    background-color: rgba(209, 209, 47, 0.715);
+}
+#dots{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 38, 0);
+}
+#prev-btn:hover,#next-btn:hover{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.537);
+}
+#menu-section{
+    background-color: rgb(18, 18, 18);
+    height: 100vh;
+}
+ #dishName{
+    border-radius: 40px;
+    margin: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(110, 195, 12, 0.47);
+    color: rgb(222, 211, 2);
+ }
+ #dish-img{
+    border-radius: 25px;
+ }
+#price{
+    color: yellow;
+    text-align: center;
+}
+#Booking{
+   background: url('./images/formBg.jpg') no-repeat center;
+    height: 100vh;
+    background-size: 100% auto;
+    object-fit: contain;
+    opacity: 0.8; 
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#form{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 140, 0, 0.386);
+}
+#contactDetails{
+    color: brown;
+}
+.footerDetails{
+    background-color: black;
+    color: white;
+}
+#icons,#arrowIcon{
+    color: rgb(243, 247, 14);
+    border: 1px solid white; 
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#arrowIcon{
+   margin: 5px 1rem 1rem 90%;
+}
+#icons:hover,#arrowIcon:hover{
+    background-color: white;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Media Queries */
+@media only screen and (max-width:576px){
+    .navbar-brand{
+        margin: 6rem 2rem;
+    }
+    .navbar-toggler{
+        position: absolute;
+        right: 3rem;
+    }
+    .hero-content{
+        position: absolute;
+        bottom: 12rem;
+    }
+    #chef-contents{
+        margin: 70rem 20% 20px 20%;
+    }
+}
