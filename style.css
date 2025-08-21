@@ -4,8 +4,8 @@
 }
 .hero-section{
     background: url('/images/bg.jpg') no-repeat center;
-    height: 100vh;
-    background-size: 100% auto;
+    min-height: 100vh;
+    background-size: cover;
     object-fit: contain;
     opacity: 0.9;
 }
@@ -58,8 +58,8 @@
 }
 #service-section{
     background: url('./images/service-bg.jpg') no-repeat center;
-    height: 100vh;
-    background-size: 100% auto;
+    min-height: 100vh;
+    background-size: cover;
     object-fit: contain;
     opacity: 0.85;
 }
@@ -113,7 +113,7 @@
 }
 #menu-section{
     background-color: rgb(18, 18, 18);
-    height: 100vh;
+    min-height: 100vh;
 }
  #dishName{
     border-radius: 40px;
@@ -131,9 +131,9 @@
     text-align: center;
 }
 #Booking{
-   background: url('./images/formBg.jpg') no-repeat center;
-    height: 100vh;
-    background-size: 100% auto;
+    background: url('./images/formBg.jpg') no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
     object-fit: contain;
     opacity: 0.8; 
 }
@@ -172,20 +172,15 @@ h3{
 html{
     scroll-behavior: smooth;
 }
-/* Media Queries */
-@media only screen and (max-width:576px){
-    .navbar-brand{
-        margin: 6rem 2rem;
-    }
-    .navbar-toggler{
-        position: absolute;
-        right: 3rem;
-    }
-    .hero-content{
-        position: absolute;
-        bottom: 12rem;
-    }
-    #chef-contents{
-        margin: 70rem 20% 20px 20%;
-    }
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(215, 150, 8);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: grey;
+    border-radius: 20px;
 }
